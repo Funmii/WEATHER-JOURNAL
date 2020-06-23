@@ -1,0 +1,53 @@
+<!-- HTML CODE -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather journal</title>
+    <link rel="stylesheet" href="font/Rimouski.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="app-title">
+            <p>Weather Journal</p>
+        </div>
+        <div class="holder zip">
+            <label for="zip">Enter Zipcode here</label>
+            <input type="text" id="zip" placeholder="enter zip code here" />
+          </div>
+          <div class="holder feel">
+            <label for="feelings">How are you feeling today?</label>
+            <textarea
+              class="myInput"
+              id="feelings"
+              placeholder="Enter your feelings here">
+              
+            </textarea>
+            <div id="entryHolder">
+                <div id="date"></div>
+                <div id="temp"></div>
+                <div id="content"></div>
+            </div>
+            <button id="generate" type="submit">Generate</button>
+          </div>
+        <div class="notification"> </div>
+        <div class="weather-container">
+            <div class="weather-icon">
+                <img src="icons/unknown.png" alt="">
+            </div>
+            <div class="temperature-value">
+                <p>- °<span>C</span></p>
+            </div>
+            <div class="temperature-description">
+                <p> - </p>
+            </div>
+            <div class="location">
+                <p>-</p>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
